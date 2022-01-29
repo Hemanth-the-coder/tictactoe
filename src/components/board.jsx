@@ -1,7 +1,7 @@
 import React ,{useState} from "react";
 import Square from "./Square";
 
-const Board = ({board, handlesqaureclick})=>{
+const Board = ({board, handlesqaureclick , winningsquare})=>{
 return (
     <div className="board">
         <div className="board-row">
@@ -11,14 +11,14 @@ return (
           
         </div>
         <div className="board-row">
-        <Square value={board[3]} onClick={()=>{handlesqaureclick(3)}}/>
-          <Square value={board[4]} onClick={()=>{handlesqaureclick(4)}}/>
-          <Square value={board[5]} onClick={()=>{handlesqaureclick(5)}}/>
+        <Square value={board[3]} onClick={()=>{handlesqaureclick(3)}} />
+          <Square value={board[4]} onClick={()=>{handlesqaureclick(4)}} />
+          <Square value={board[5]} onClick={()=>{handlesqaureclick(5)}}  />
         </div>
         <div className="board-row">
-        <Square value={board[6]} onClick={()=>{handlesqaureclick(6)}}/>
-          <Square value={board[7]} onClick={()=>{handlesqaureclick(7)}}/>
-          <Square value={board[8]} onClick={()=>{handlesqaureclick(8)}}/>
+        <Square value={board[6]} onClick={()=>{handlesqaureclick(6)}} />
+          <Square value={board[7]} onClick={()=>{handlesqaureclick(7)}} />
+          <Square value={board[8]} onClick={()=>{handlesqaureclick(8)}} />
         </div>
      
     </div>
